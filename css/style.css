@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+    --grid-element-size: 1px;
+}
+
+#etch_of_life {
+    font-size: 64px;
+    pointer-events: none;
+    text-align: center;
+}
+
+#menu {
+    font-size: 24px;
+    pointer-events: none;
+    text-align: left;
+    top: 24px;
+    left: 24px;
+    position: absolute;
+}
+
+.cmd {
+    font-weight: bold;
+}
+
+.cmd-function {
+    padding-left: 24px;
+    text-align: right;
+}
+
+.cmd-display {
+    padding-left: 24px;
+    text-align: left;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.list_element {
+    padding-right: 24px;
+}
+
+#grid_container {
+    max-height: 0px;
+    max-width: 0px;
+}
+
+.grid-item {
+    padding: 0em;
+    text-align: center;
+    height: var(--grid-element-size);
+    aspect-ratio: 1 / 1;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0.0;
+    }
+}
+.blink {
+    animation: blink 1s step-end 0s infinite;
+}
+
+.text {
+    margin-right: 1px;
+}
